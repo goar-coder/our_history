@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatBox = document.getElementById('chatBox');
 
     // WEBHOOK URL - Change this to your actual webhook
-    const WEBHOOK_URL = 'https://hook.eu2.make.com/your-webhook-id'; 
+    const WEBHOOK_URL = 'https://n8n-initial-n8n.aq8y8p.easypanel.host/webhook-test/59c439d5-bd6d-4634-8acb-b22cb1ad7dc4'
 
     chatForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // so the user can see the UI flow.
             
             // To use real webhook: uncomment the fetch below and remove the mock logic
-            /*
+            
             const response = await fetch(WEBHOOK_URL, {
                 method: 'POST',
                 headers: {
@@ -39,12 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
             const botReply = data.reply || data.message || "Recibido.";
-            */
+            
 
              // MOCK RESPONSE SIMULATION (Remove this block when real webhook is ready)
+             /*
              await new Promise(resolve => setTimeout(resolve, 1500));
              const botReply = "Gracias por compartir esa parte de tu historia. ¿Qué sentiste en ese momento?";
-
+            */
 
             removeMessage(loadingId);
             addMessage(botReply, 'bot-message');
