@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatBox = document.getElementById('chatBox');
 
     // WEBHOOK URL - Change this to your actual webhook
-    const WEBHOOK_URL = 'https://n8n-initial-n8n.aq8y8p.easypanel.host/webhook-test/59c439d5-bd6d-4634-8acb-b22cb1ad7dc4'
+    // const WEBHOOK_URL = 'https://n8n-initial-n8n.aq8y8p.easypanel.host/webhook-test/59c439d5-bd6d-4634-8acb-b22cb1ad7dc4'
+    const WEBHOOK_URL = 'https://n8n-initial-n8n.aq8y8p.easypanel.host/webhook/4fe3faa7-948c-4d58-ab20-d3e67be2a3f3'
+    
 
     chatForm.addEventListener('submit', async (e) => {
         e.preventDefault();
